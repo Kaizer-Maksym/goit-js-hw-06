@@ -7,7 +7,7 @@ const refs = {
 
 refs.input.addEventListener('input', () => {});
 refs.createboxBtn.addEventListener('click', createBoxes);
-refs.deleteboxBtn.addEventListener('click', deleteBox);
+refs.deleteboxBtn.addEventListener('click', destroyBoxes);
 
 let baseboxSize = 30;
 
@@ -26,7 +26,7 @@ function createBoxes(amount) {
   }
 }
 
-function deleteBox() {
+function destroyBoxes() {
   refs.boxes.innerHTML = '';
 }
 
