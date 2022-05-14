@@ -27,11 +27,7 @@ function createBoxes(amount) {
 }
 
 function deleteBox() {
-  const allNewBoxes = document.querySelectorAll('.new-box');
-  for (let allNewBoxe of allNewBoxes) {
-    boxes.removeChild(allNewBoxe);
-  }
-  baseboxSize = 30;
+  refs.boxes.innerHTML = '';
 }
 
 function getRandomHexColor() {
