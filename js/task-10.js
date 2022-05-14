@@ -22,7 +22,7 @@ function createBoxes(amount) {
     newBox.style.width = baseboxSize + 'px';
     newBox.style.margin = '10px';
     newBox.classList.add('new-box');
-    boxes.append(newBox);
+    refs.boxes.append(newBox);
   }
 }
 
